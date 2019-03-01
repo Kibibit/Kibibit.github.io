@@ -5,6 +5,10 @@ body {
   width: 100vw;
 }
 
+p[align="center"]:nth-of-type(3) a img {
+  height: 1.7em; 
+}
+
 .kb-close {
   position: absolute;
   top: 0;
