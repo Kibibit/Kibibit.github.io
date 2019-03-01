@@ -144,20 +144,11 @@ function redraw() {
         const html = converter.makeHtml(content);
 
         $(`${ datum.modalSelector } .content`).html(html);
-        $(`${ datum.modalSelector } .watch-on-github`).attr('href', `https://github.com/kibibit/${ datum.id }`)
-        // // Change badges to "for-the-badge" style
-        // $(datum.modalSelector)
-        //   .find('.content a img')
-        //   .attr('src', function( i, val ) {
-        //   const cleaned = val.replace(/&?style=.*&|&?style=[^&]*$/, '');
-        //   return val.indexOf('?') === -1 ?
-        //     `${ cleaned }?style=for-the-badge` :
-        //   `${ cleaned }&style=for-the-badge`;
-        // });
+        $(`${ datum.modalSelector } .watch-on-github`).attr('href', `https://github.com/kibibit/${ datum.id }`);
+        $(datum.modalSelector).addClass('active');
       })
         .catch((err) => console.error(err));
     }
-    $(datum.modalSelector).addClass('active');
   });
 
   // var texts = node.append("text")
