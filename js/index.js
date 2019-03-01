@@ -116,10 +116,7 @@ function redraw() {
   .attr("y", -40)
   .on("click", function(datum){
     // Determine if current line is visible
-    console.log('clicked on!', datum.id);
-    console.log('should open this modal:', datum.modalSelector);
     if (datum.id !== 'kibibit') {
-      console.log('I an inside!');
       const octokit = new Octokit();
 
       octokit.repos.getContents({
@@ -130,7 +127,6 @@ function redraw() {
 
         .then(result => {
         let content = '';
-        // content will be base64 encoded
         atob(result.data.content)
           .replace(/^([\s\S]*\<hr\>)([\s\S]*?)(#+\s?Contributing[\s\S]*)?$/m, (full, first, second, third) => {
           content = `${ first }\n${ third || '' }`;
