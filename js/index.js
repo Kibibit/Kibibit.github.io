@@ -116,7 +116,7 @@ function redraw() {
   .attr("y", -40)
   .on("click", function(datum){
     // Determine if current line is visible
-    if (datum.id !== 'kibibit') {
+    if (datum.modalSelector !== '#about-readme') {
       const octokit = new Octokit();
 
       octokit.repos.getContents({
@@ -144,6 +144,8 @@ function redraw() {
         $(datum.modalSelector).addClass('active');
       })
         .catch((err) => console.error(err));
+    } else {
+      $(datum.modalSelector).addClass('active');
     }
   });
 
