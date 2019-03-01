@@ -116,7 +116,7 @@ function redraw() {
   .attr("y", -40)
   .on("click", function(datum){
     // Determine if current line is visible
-    if (datum.modalSelector !== '#about-readme') {
+    if (datum.modalSelector === '#about-readme') {
       const octokit = new Octokit();
 
       octokit.repos.getContents({
