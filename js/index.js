@@ -150,12 +150,17 @@ function redraw() {
         const converter = new showdown.Converter({ emoji: true, tables: true });
         converter.setOption('emoji', true);
         const html = converter.makeHtml(content);
+          
+        const modalElement = $(datum.modalSelector);
+        const modalContentElement = modalElement.find('.content');
+        const githubLinkElement = modalElement.find('.watch-on-github');
+        const homepageLinkElement = modalElement.find('.watch-homepage');
 
-        $(`${ datum.modalSelector } .content`).html(html);
-        $(`${ datum.modalSelector } .watch-on-github`).attr('href', `https://github.com/kibibit/${ datum.id }`);
-        $(`${ datum.modalSelector } .watch-homepage`).attr('href', info.homepage || '');
-        if (!info.homepage) { $(`${ datum.modalSelector } .watch-homepage`).hide(); }
-        $(datum.modalSelector).addClass('active');
+        modalContentElement.html(html);
+        githubLinkElement.attr('href', `https://github.com/kibibit/${ datum.id }`);
+        homepageLinkElement.attr('href', info.homepage || '');
+        if (!info.homepage) { homepageLinkElement.hide(); } else { homepageLinkElement.show(); }
+        modalElement.addClass('active');
       })
         .catch((err) => console.error(err));
     } else {
