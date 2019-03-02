@@ -132,7 +132,8 @@ function redraw() {
           })
       ])
         .then(result => {
-          const [ readme, info ] = result;
+        let [ readme, info ] = result;
+        info = atob(info.data.content);
         let content = '';
         atob(readme.data.content)
           .replace(/^([\s\S]*\<hr\>)([\s\S]*?)(#+\s?Contributing[\s\S]*)?$/m, (full, first, second, third) => {
