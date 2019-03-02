@@ -32,13 +32,13 @@ function redraw() {
     "image": "https://github.com/Kibibit/kibibit-assets/raw/master/logo-achi.png",
     "modalSelector": "#about-readme"
   }, {
-    "id": "kibibitcodeeditor",
+    "id": "kibibit-code-editor",
     "image": "http://kibibit.io/logo-demo/code-editor.png",
-    "modalSelector": "#about-code-editor"
+    "modalSelector": "#about-readme"
   }, {
-    "id": "achievibitchromeextension",
+    "id": "achievibit-chrome-extension",
     "image": "https://www.pivotaltracker.com/marketing_assets/integrations/2015/google-chrome-extension-6a26cdad27e6f383174791f8648fbe4cc7627acc06e3870c588217c98d1bde91.png",
-    "modalSelector": "#about-achievibit-extension"
+    "modalSelector": "#about-readme"
   },
                {
                  "id": "cli-lit",
