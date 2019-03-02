@@ -119,15 +119,22 @@ function redraw() {
     if (datum.modalSelector === '#about-readme') {
       const octokit = new Octokit();
 
-      octokit.repos.getContents({
-        owner: 'kibibit',
-        repo: datum.id,
-        path: 'README.md'
-      })
-
+      Promise.all([
+          octokit.repos.getContents({
+            owner: 'kibibit',
+            repo: datum.id,
+            path: 'README.md'
+          }),
+          octokit.repos.getContents({
+            owner: 'kibibit',
+            repo: datum.id,
+            path: 'package.json'
+          })
+      ])
         .then(result => {
+          const [ readme, info ] = result;
         let content = '';
-        atob(result.data.content)
+        atob(readme.data.content)
           .replace(/^([\s\S]*\<hr\>)([\s\S]*?)(#+\s?Contributing[\s\S]*)?$/m, (full, first, second, third) => {
           content = `${ first }\n${ third || '' }`;
           return `${ first }\n${ third || '' }`;
@@ -141,6 +148,8 @@ function redraw() {
 
         $(`${ datum.modalSelector } .content`).html(html);
         $(`${ datum.modalSelector } .watch-on-github`).attr('href', `https://github.com/kibibit/${ datum.id }`);
+        $(`${ datum.modalSelector } .watch-homepage`).attr('href', info.homepage || '');
+        if (!info.homepage) { $(`${ datum.modalSelector } .watch-homepage`).hide(); }
         $(datum.modalSelector).addClass('active');
       })
         .catch((err) => console.error(err));
