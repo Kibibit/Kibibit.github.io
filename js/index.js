@@ -133,7 +133,11 @@ function redraw() {
       ])
         .then(result => {
         let [ readme, info ] = result;
-        info = atob(info.data.content);
+
+        try {
+          info = JSON.parse(atob(info.data.content));
+        } catch(err) {}
+
         let content = '';
         atob(readme.data.content)
           .replace(/^([\s\S]*\<hr\>)([\s\S]*?)(#+\s?Contributing[\s\S]*)?$/m, (full, first, second, third) => {
