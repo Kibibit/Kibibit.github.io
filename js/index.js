@@ -60,7 +60,7 @@ function redraw() {
     },
     {
       "id": "kb-hologram",
-      "image": "https://github.com/Kibibit/kb-hologram/raw/next/hologram.svg?sanitize=true",
+      "image": "http://kibibit.io/kibibit-assets/kb-hologram/logo.svg",
       "modalSelector": "#about-readme"
     },
     {
