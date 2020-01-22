@@ -3,11 +3,12 @@ body {
   background: #212121;
   height: 100vh;
   width: 100vw;
+  font-family: 'Comfortaa', cursive;
 }
 
 p[align="center"]:nth-of-type(3) a img,
 p[align="center"]:nth-of-type(4) a img {
-  height: 1.7em; 
+  height: 1.7em;
 }
 
 .kb-close {
@@ -17,7 +18,10 @@ p[align="center"]:nth-of-type(4) a img {
   padding: 10px;
   cursor: pointer;
 }
-.kb-close:active, .kb-close:focus, .kb-close:hover {
+
+.kb-close:active,
+.kb-close:focus,
+.kb-close:hover {
   background-color: #14fdce;
   color: #031e11;
 }
@@ -27,13 +31,55 @@ p[align="center"]:nth-of-type(4) a img {
   background: #212121;
   font-family: "Hack";
 }
+
 .kb-crt .frame {
   display: none;
 }
+
 .kb-crt.active .frame {
   display: block;
 }
 
 ion-icon {
   --ion-color-base: currentColor;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  height: 60px;
+  background: hsl(0, 0%, 10%);
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  /* -webkit-box-shadow: 0px 7px 16px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 16px 2px rgba(0, 0, 0, 0.75); */
+  box-shadow: 0px 7px 16px 2px rgba(0, 0, 0, 0.75);
+}
+
+nav img {
+  height: 70%;
+  margin-right: 1em;
+}
+
+nav>a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(48, 100%, 67%);
+  padding: 0 0.5em;
+  text-decoration: none;
+  transition: all 250ms;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+nav>a:hover {
+  color: black;
+  background: hsl(48, 100%, 67%);
+  /* text-decoration: underline; */
 }
