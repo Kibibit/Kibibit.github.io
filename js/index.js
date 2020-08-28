@@ -74,10 +74,15 @@ function redraw() {
       "modalSelector": "#about-readme"
     },
     {
-      "id": "stacker",
-      "image": "http://kibibit.io/kibibit-assets/stacker.png",
-      "modalSelector": "#about-readme"
-    },
+        "id": "stacker",
+        "image": "http://kibibit.io/kibibit-assets/stacker.png",
+        "modalSelector": "#about-readme"
+      },
+      {
+        "id": "hass-kibibit-theme",
+        "image": "//thatkookooguy.github.io/https-assets/hassio-theme-logo.png",
+        "modalSelector": "#about-readme"
+      },
     // {
     //   "id": "kb-login-page",
     //   "image": "https://camo.githubusercontent.com/01a1947671f7f77ecdd0096aa8d8f51b6aadaa4a/687474703a2f2f6b6962696269742e696f2f6b6962696269742d6173736574732f6c6f67696e2e737667",
@@ -127,9 +132,13 @@ function redraw() {
       "target": 9
     },
     {
-      "source": 0,
-      "target": 10
-    },
+        "source": 0,
+        "target": 10
+      },
+      {
+        "source": 0,
+        "target": 11
+      },
     // {
     //   "source": 0,
     //   "target": 11
