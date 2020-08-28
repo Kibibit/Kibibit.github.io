@@ -33,11 +33,11 @@ function redraw() {
       "image": "https://github.com/Kibibit/kibibit-assets/raw/master/logo-achi.png",
       "modalSelector": "#about-readme"
     },
-    {
-      "id": "achievibit-chrome-extension",
-      "image": "https://www.pivotaltracker.com/marketing_assets/integrations/2015/google-chrome-extension-6a26cdad27e6f383174791f8648fbe4cc7627acc06e3870c588217c98d1bde91.png",
-      "modalSelector": "#about-readme"
-    },
+    // {
+    //   "id": "achievibit-chrome-extension",
+    //   "image": "https://www.pivotaltracker.com/marketing_assets/integrations/2015/google-chrome-extension-6a26cdad27e6f383174791f8648fbe4cc7627acc06e3870c588217c98d1bde91.png",
+    //   "modalSelector": "#about-readme"
+    // },
     {
       "id": "kibibit-code-editor",
       "image": "http://kibibit.io/logo-demo/code-editor.png",
@@ -80,7 +80,7 @@ function redraw() {
       },
       {
         "id": "hass-kibibit-theme",
-        "image": "//thatkookooguy.github.io/https-assets/hassio-theme-logo.png",
+        "image": "//thatkookooguy.github.io/https-assets/hassio-theme-logo-trans.png",
         "modalSelector": "#about-readme"
       },
     // {
@@ -100,7 +100,7 @@ function redraw() {
       "target": 1
     },
     {
-      "source": 1,
+      "source": 0,
       "target": 2
     },
     {
@@ -135,10 +135,10 @@ function redraw() {
         "source": 0,
         "target": 10
       },
-      {
-        "source": 0,
-        "target": 11
-      },
+    //   {
+    //     "source": 0,
+    //     "target": 11
+    //   },
     // {
     //   "source": 0,
     //   "target": 11
