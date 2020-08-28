@@ -80,7 +80,7 @@ function redraw() {
       },
       {
         "id": "hass-kibibit-theme",
-        "image": "//thatkookooguy.github.io/https-assets/hassio-theme-logo-trans.png",
+        "image": "http://kibibit.io/kibibit-assets/hassio-theme/hassio-theme-logo-trans.png",
         "modalSelector": "#about-readme"
       },
     // {
