@@ -25,7 +25,7 @@ function redraw() {
 
   var nodes = [{
       "id": "kibibit",
-      "image": "http://kibibit.io/logo-demo/logo.png",
+      "image": "https://kibibit.io/logo-demo/logo.png",
       "modalSelector": "#about-kibibit"
     },
     {
@@ -40,27 +40,27 @@ function redraw() {
     // },
     {
       "id": "kibibit-code-editor",
-      "image": "http://kibibit.io/logo-demo/code-editor.png",
+      "image": "https://kibibit.io/logo-demo/code-editor.png",
       "modalSelector": "#about-readme"
     },
     {
       "id": "cli-lit",
-      "image": "http://kibibit.io/kibibit-assets/cli-lit-logo-transparent.png",
+      "image": "https://kibibit.io/kibibit-assets/cli-lit-logo-transparent.png",
       "modalSelector": "#about-readme"
     },
     {
       "id": "kb-components",
-      "image": "http://kibibit.io/kibibit-assets/kb-components-logo-transparent.png",
+      "image": "https://kibibit.io/kibibit-assets/kb-components-logo-transparent.png",
       "modalSelector": "#about-readme"
     },
     {
       "id": "tdd1t",
-      "image": "http://kibibit.io/kibibit-assets/4x/tdd1t-avatar-transparent%404x.png",
+      "image": "https://kibibit.io/kibibit-assets/4x/tdd1t-avatar-transparent%404x.png",
       "modalSelector": "#about-readme"
     },
     {
       "id": "kb-hologram",
-      "image": "http://kibibit.io/kibibit-assets/kb-hologram/logo.svg",
+      "image": "https://kibibit.io/kibibit-assets/kb-hologram/logo.svg",
       "modalSelector": "#about-readme"
     },
     {
