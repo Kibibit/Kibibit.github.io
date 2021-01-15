@@ -70,17 +70,17 @@ function redraw() {
     },
     {
       "id": "cold-deck",
-      "image": "http://kibibit.io/kibibit-assets/cold-deck/logo.svg",
+      "image": "https://kibibit.io/kibibit-assets/cold-deck/logo.svg",
       "modalSelector": "#about-readme"
     },
     {
         "id": "stacker",
-        "image": "http://kibibit.io/kibibit-assets/stacker.png",
+        "image": "https://kibibit.io/kibibit-assets/stacker.png",
         "modalSelector": "#about-readme"
       },
       {
         "id": "hass-kibibit-theme",
-        "image": "http://kibibit.io/kibibit-assets/hassio-theme/hassio-theme-logo-trans.png",
+        "image": "https://kibibit.io/kibibit-assets/hassio-theme/hassio-theme-logo-trans.png",
         "modalSelector": "#about-readme"
       },
     // {
