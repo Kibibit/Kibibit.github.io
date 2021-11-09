@@ -86,3 +86,13 @@ nav {
 		}
 	}
 }
+
+.svg-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+  overflow: hidden;
+}

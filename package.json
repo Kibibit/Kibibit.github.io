@@ -8,6 +8,8 @@
     "build:compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/style.scss lib/style.css",
     "start": "webpack serve",
     "start:dev": "concurrently --names \"CSS,WEBPACK\" -c \"bgMagenta.bold,bgYellow.black.bold\" \"npm run build:compile-styles -- --watch\"  \"npm run start\"",
+    "lint": "eslint -c ./.eslintrc.js \"src/**/*.js\"",
+    "lint:fix": "eslint -c ./.eslintrc.js \"src/**/*.js\" --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/Kibibit/Kibibit.github.io#readme",
   "devDependencies": {
     "concurrently": "^6.3.0",
+    "eslint": "^8.2.0",
     "http-server": "^14.0.0",
     "node-sass": "^6.0.1",
     "webpack": "^5.62.1",
