@@ -1,0 +1,88 @@
+$console-color: #14fdce;
+$console-bg: #031e11; // global settings
+
+body {
+	overflow: hidden;
+	background: #212121;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Comfortaa', cursive;
+}
+p[align="center"] {
+	&:nth-of-type(3) {
+		a {
+			img {
+				height: 1.7em;
+			}
+		}
+	}
+	&:nth-of-type(4) {
+		a {
+			img {
+				height: 1.7em;
+			}
+		}
+	}
+}
+.kb-close {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	padding: 10px;
+	cursor: pointer;
+	&:active,
+  &:focus,
+  &:hover {
+    background-color: $console-color;
+    color: $console-bg;
+  }
+}
+.kb-crt {
+	font-size: 1em;
+	background: #212121;
+	font-family: "Hack";
+	.frame {
+		display: none;
+	}
+}
+.kb-crt.active {
+	.frame {
+		display: block;
+	}
+}
+ion-icon {
+	--ion-color-base: currentColor;
+}
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	color: white;
+	height: 60px;
+	background: hsl(0, 0%, 10%);
+	display: flex;
+	align-items: center;
+	padding: 0 1em;
+	box-shadow: 0px 7px 16px 2px rgba(0, 0, 0, 0.75);
+	img {
+		height: 70%;
+		margin-right: 1em;
+	}
+	>a {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: hsl(48, 100%, 67%);
+		padding: 0 0.5em;
+		text-decoration: none;
+		transition: all 250ms;
+		font-weight: 500;
+		border-radius: 4px;
+		&:hover {
+			color: black;
+			background: hsl(48, 100%, 67%);
+		}
+	}
+}

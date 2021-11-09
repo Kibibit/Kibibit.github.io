@@ -1,5 +1,11 @@
+import { webConsolelogo } from '@kibibit/consologo';
+
+webConsolelogo('kibibit.io Homepage');
+
 var body = document.body,
   html = document.documentElement;
+  
+  // nice
 
 var svg = d3.select("body")
   .append("svg");
@@ -83,6 +89,21 @@ function redraw() {
         "image": "https://kibibit.io/kibibit-assets/hassio-theme/hassio-theme-logo-trans.png",
         "modalSelector": "#about-readme"
       },
+      {
+        "id": "command-lime",
+        "image": "https://kibibit.io/command-lime/logo-clear.png",
+        "modalSelector": "#about-readme"
+      },
+      {
+        "id": "dev-tools",
+        "image": "https://kibibit.io/dev-tools/logo.png",
+        "modalSelector": "#about-readme"
+      },
+      {
+        "id": "configit",
+        "image": "https://kibibit.io/configit/logo.png",
+        "modalSelector": "#about-readme"
+      },
     // {
     //   "id": "kb-login-page",
     //   "image": "https://camo.githubusercontent.com/01a1947671f7f77ecdd0096aa8d8f51b6aadaa4a/687474703a2f2f6b6962696269742e696f2f6b6962696269742d6173736574732f6c6f67696e2e737667",
@@ -135,18 +156,18 @@ function redraw() {
         "source": 0,
         "target": 10
       },
-    //   {
-    //     "source": 0,
-    //     "target": 11
-    //   },
-    // {
-    //   "source": 0,
-    //   "target": 11
-    // },
-    // {
-    //   "source": 0,
-    //   "target": 12
-    // }
+      {
+        "source": 0,
+        "target": 11
+      },
+      {
+        "source": 0,
+        "target": 12
+      },
+      {
+        "source": 0,
+        "target": 13
+      }
   ];
 
   var simulation = d3.forceSimulation()
@@ -214,6 +235,10 @@ function redraw() {
                 content = `${ first }\n${ third || '' }`;
                 return `${ first }\n${ third || '' }`;
               });
+
+            content = content
+              .replace('"logo.png"', `"//kibibit.io/${datum.id}/logo.png"`)
+              .replace('"logo-clear.png"', `"//kibibit.io/${datum.id}/logo-clear.png"`)
 
             showdown.setFlavor('github');
 
