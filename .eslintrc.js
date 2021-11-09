@@ -139,7 +139,8 @@ const config = {
     'require-await': 'warn',
     'no-shadow': 'warn',
     'no-undefined': 'error',
-    'line-comment-position': [ 'error', { position: 'above' } ]
+    'line-comment-position': [ 'error', { position: 'above' } ],
+    'quote-props': [ 'error', 'as-needed' ]
   }
 };
 
