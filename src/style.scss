@@ -96,3 +96,16 @@ nav {
 	justify-content: center;
   overflow: hidden;
 }
+
+.graph-node {
+  cursor: pointer;
+}
+
+.footer-note {
+  color: rgba(white, 0.3);
+  position: fixed;
+  bottom: 0.5em;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

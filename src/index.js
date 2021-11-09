@@ -219,6 +219,7 @@ function redraw() {
     .data(nodes)
     .enter()
     .append('g')
+    .classed('graph-node', true)
     .call(d3.drag()
       .on('start', dragstarted)
       .on('drag', dragged)

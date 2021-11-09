@@ -92,4 +92,17 @@ nav > a:hover {
   overflow: hidden;
 }
 
+.graph-node {
+  cursor: pointer;
+}
+
+.footer-note {
+  color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  bottom: 0.5em;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
